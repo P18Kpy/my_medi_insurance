@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Cards</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            /* min-height: 980px; */
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 720px;
+            height: 720px;
+            background-color: white;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .card img{
+            height: 57%;
+            border-radius: 10px;
+        }
+
+        .card h2{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .card p{
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="card">
+
+
+            <center>upload details</center>
+            <form action="" method="post">
+
+
+        {% csrf_token %}
+
+        {{form.as_p}}
+
+        <input type='submit' />
+
+            </form>
+            <span><h1>age</h1>:{{age}}</span>
+                <span><h1>bmi</h1>:{{bmi}}</span>
+                    <span><h1>sex</h1>:{{sex}}</span>
+                        <span><h1>children</h1>:{{children}}</span>
+                            <span><h1>smoker</h1>:{{smoker}}</span>
+                                <span><h1>region</h1>:{{region}}</span>
+                                    <span><h1> result </h1> {{result}}</span>
+
+        </div>
+        
+
+    </div>
+
+
+</body>
+</html>
+
+<!--
+
+    
+    
+    <div class="container">
+
+        <div class="card">
+            <form action="" method="post">
+                {% csrf_token %}
+                <label for="age">AGE:</label>
+                <input type="number" id="age" name="age" required><br>
+                    <br>
+                <label for="bmi">BMI:</label>
+                <input type="number" id="bmi" name="bmi" required><br>
+                <br>
+                <label for="sex">Sex</label>
+                <input type="text" id="sex" name="sex" required><br>
+                <br>
+                <label for="children">Children</label>
+                <input type="text" id="children" name="children" required><br>
+                <br>
+                <label for="smoker">Password:</label>
+                <input type="text" id="smoker" name="sword" required><br>
+                <br>
+                <label for="charges">Confirm Password:</label>
+                <input type="number" id="charges" name="charges" required><br>
+                <br>
+
+            -->
+
+            <!--
+              
+
+                <h2>Improve your front end skills buy developing Projects</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, velit quod obcaecati voluptatem minus quasi praesentium quia. Dolorum.`
+                </p>
+            </div>
+    
+        </div>
+    
+
+       -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
